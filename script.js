@@ -4,7 +4,7 @@ let mods = [
         id: 1,
         name: "PlayRay Menu v1.4.2",
         game: "YAPYAP",
-        description: "Advanced cheat menu with ESP, God Mode, spawning, and value modifications. Crash fix update with improved stability.",
+        description: "Advanced mod menu with ESP, God Mode, spawning, and value modifications. Crash fix update with improved stability.",
         image: "Mods/YAPYAP/icon.jpg",
         file: "Mods/YAPYAP/PlayRayYAPYAP.dll",
         readme: "Mods/YAPYAP/README.md"
