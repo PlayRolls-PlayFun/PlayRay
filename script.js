@@ -69,12 +69,9 @@ async function showModDetails(modId) {
         detailsContent.innerHTML = '<p>Error loading mod details.</p>';
     }
     
-    // Set download button
+    // Set download button - direct download without ad
     const downloadBtn = document.getElementById('detailsDownloadBtn');
-    downloadBtn.onclick = () => {
-        closeDetailsModal();
-        showAdModal(modId);
-    };
+    downloadBtn.onclick = () => downloadMod(modId);
     
     modal.style.display = 'block';
 }
@@ -83,30 +80,6 @@ async function showModDetails(modId) {
 function closeDetailsModal() {
     const modal = document.getElementById('detailsModal');
     modal.style.display = 'none';
-}
-
-// Show ad modal
-function showAdModal(modId) {
-    const modal = document.getElementById('adModal');
-    const downloadBtn = document.getElementById('downloadBtn');
-    const timerSpan = document.getElementById('timer');
-    
-    modal.style.display = 'block';
-    downloadBtn.disabled = true;
-    
-    let timeLeft = 5;
-    timerSpan.textContent = timeLeft;
-    
-    const timer = setInterval(() => {
-        timeLeft--;
-        timerSpan.textContent = timeLeft;
-        
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            downloadBtn.disabled = false;
-            downloadBtn.onclick = () => downloadMod(modId);
-        }
-    }, 1000);
 }
 
 // Download mod
@@ -120,25 +93,13 @@ function downloadMod(modId) {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
-        closeModal();
     }
-}
-
-// Close modal
-function closeModal() {
-    const modal = document.getElementById('adModal');
-    modal.style.display = 'none';
 }
 
 // Close modal when clicking outside
 window.onclick = function(event) {
-    const adModal = document.getElementById('adModal');
     const detailsModal = document.getElementById('detailsModal');
     
-    if (event.target === adModal) {
-        closeModal();
-    }
     if (event.target === detailsModal) {
         closeDetailsModal();
     }
