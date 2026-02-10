@@ -1,6 +1,6 @@
 # PlayRay Menu v1.4.2 - Crash Fix Update
 
-Advanced cheat menu for YAPYAP with ESP, God Mode, spawning, and value modifications.
+Advanced mod menu for YAPYAP with ESP, God Mode, spawning, and value modifications.
 
 **v1.4.2 Changes:**
 - 🛡️ Fixed memory leak causing game crashes (particle system optimization)
