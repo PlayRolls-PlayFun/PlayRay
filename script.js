@@ -120,3 +120,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 // Load mods on page load
 loadMods();
+
+// Hide loading screen after page loads
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        if (loadingScreen) {
+            loadingScreen.style.display = 'none';
+        }
+    }, 1500);
+});

@@ -15,32 +15,14 @@
     <!-- Left Sidebar Ad -->
     <aside class="sidebar-ad sidebar-ad-left">
         <div class="ad-placeholder">
-            <!-- Google AdSense код сюда -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5985190317367258"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
-                 data-ad-format="vertical"
-                 data-full-width-responsive="false"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <p class="ad-placeholder-text">Your ad could be here</p>
         </div>
     </aside>
 
     <!-- Right Sidebar Ad -->
     <aside class="sidebar-ad sidebar-ad-right">
         <div class="ad-placeholder">
-            <!-- Google AdSense код сюда -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5985190317367258"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
-                 data-ad-format="vertical"
-                 data-full-width-responsive="false"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <p class="ad-placeholder-text">Your ad could be here</p>
         </div>
     </aside>
 
@@ -95,20 +77,27 @@
             <span class="close-btn" onclick="closeDetailsModal()">&times;</span>
             
             <div class="details-header">
-                <div class="details-image-container">
-                    <img id="modDetailImage" src="" alt="Mod Image" class="details-image">
-                    <button id="detailsDownloadBtn" class="download-btn details-download-btn">Download Mod</button>
-                </div>
+                <img id="modDetailImage" src="" alt="Mod Image" class="details-image-large">
                 
-                <div class="details-info">
+                <div class="details-info-center">
                     <h2 id="modDetailTitle" class="details-title"></h2>
                     <div id="modDetailGame" class="details-game"></div>
+                    <button id="detailsDownloadBtn" class="download-btn details-download-btn-large">Download Mod</button>
                 </div>
             </div>
             
             <div id="detailsContent" class="details-content">
                 <!-- README content will be loaded here -->
             </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-logo"><span class="logo-play">Play</span><span class="logo-ray">Ray</span></h1>
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading mods...</p>
         </div>
     </div>
 
