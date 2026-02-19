@@ -2,7 +2,7 @@
 let mods = [
     {
         id: 1,
-        name: "PlayRay Menu v1.4.2",
+        name: "PlayRay Menu v1.5.2",
         game: "YAPYAP",
         description: "Advanced mod menu with ESP, God Mode, spawning, and value modifications. Crash fix update with improved stability.",
         image: "Mods/YAPYAP/icon.jpg",

@@ -1,15 +1,7 @@
-# PlayRay Menu v1.4.2 - Crash Fix Update
+# PlayRay Menu v1.5.2 - Crash Fix Update
 
 Advanced mod menu for YAPYAP with ESP, God Mode, spawning, and value modifications.
 
-**v1.4.2 Changes:**
-- 🛡️ Fixed memory leak causing game crashes (particle system optimization)
-- 🛡️ Added maximum particle limit (100) to prevent overflow
-- 🛡️ Reduced particle count per effect from 20 to 10
-- 🛡️ Added automatic resource cleanup on mod unload
-- 🛡️ Added try-catch protection in all critical functions
-- 🛡️ Fixed NetworkServer spawn checks to prevent crashes
-- ⚡ Improved overall stability and performance
 
 [English](#english) | [Русский](#russian)
 
@@ -124,30 +116,6 @@ Advanced mod menu for YAPYAP with ESP, God Mode, spawning, and value modificatio
 3. Click buttons to toggle features or modify values
 4. Use **▶** buttons to expand/collapse advanced settings
 5. Press **F2** to close menu
-
-### Performance & Stability
-- **v1.4.2**: Fixed critical memory leak causing crashes
-- **v1.4.2**: Added particle limit protection (max 100 particles)
-- **v1.4.2**: Reduced particle effects for better performance
-- **v1.4.2**: Added automatic cleanup and crash protection
-- Optimized ESP with caching (updates every 2s)
-- Maximum 30 ESP labels per frame to prevent lag
-- Direct type access instead of reflection for better performance
-- Automatic cleanup of destroyed objects
-- Efficient item prefab caching
-
-### Technical Details
-- Uses direct YAPYAP type references (Pawn, GameManager, ValuableObject, etc.)
-- Minimal reflection usage for maximum performance
-- Supports NetworkPuppetWandProp for wand detection
-- Compatible with Mirror networking
-
-### Notes
-- ESP labels show distance and object type
-- God Mode restores health automatically every second
-- All features work in multiplayer
-- Spawned items/enemies are networked and visible to all players
-- Auto collect works on all gold items within radius
 
 ### Credits
 Created by PlaySet
@@ -264,22 +232,6 @@ Created by PlaySet
 4. Используйте кнопки **▶** для раскрытия/скрытия дополнительных настроек
 5. Нажмите **F2** чтобы закрыть меню
 
-### Производительность и стабильность
-- **v1.4.2**: Исправлена критическая утечка памяти, вызывающая крашы
-- **v1.4.2**: Добавлена защита от переполнения частиц (макс 100)
-- **v1.4.2**: Уменьшены эффекты частиц для лучшей производительности
-- **v1.4.2**: Добавлена автоочистка и защита от крашей
-- Оптимизированный ESP с кэшированием (обновление каждые 2с)
-- Максимум 30 ESP меток за кадр для предотвращения лагов
-- Прямой доступ к типам вместо рефлексии для лучшей производительности
-- Автоматическая очистка уничтоженных объектов
-- Эффективное кэширование префабов предметов
-
-### Технические детали
-- Использует прямые ссылки на типы YAPYAP (Pawn, GameManager, ValuableObject и т.д.)
-- Минимальное использование рефлексии для максимальной производительности
-- Поддержка NetworkPuppetWandProp для обнаружения палочек
-- Совместимость с Mirror networking
 
 ### Примечания
 - ESP метки показывают дистанцию и тип объекта
