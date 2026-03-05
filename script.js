@@ -108,7 +108,7 @@ window.onclick = function(event) {
 
 
 // Smooth scroll for navigation
-document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('nav a:not(.download-manager-btn)').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
@@ -137,3 +137,6 @@ window.addEventListener('load', function() {
         }
     }, 1500);
 });
+
+// Load mods on page load
+loadMods();
