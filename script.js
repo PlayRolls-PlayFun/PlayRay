@@ -118,8 +118,15 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Load mods on page load
-loadMods();
+// Download manager function
+function downloadManager() {
+    const link = document.createElement('a');
+    link.href = 'manager/PlayRay Manager.zip';
+    link.download = 'PlayRay Manager.zip';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 // Hide loading screen after page loads
 window.addEventListener('load', function() {
