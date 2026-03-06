@@ -6,7 +6,7 @@ let mods = [
         game: "YAPYAP",
         description: "Advanced mod menu with ESP, God Mode, spawning, and value modifications. Crash fix update with improved stability.",
         image: "Mods/YAPYAP/icon.jpg",
-        file: "Mods/YAPYAP/PlayRayYAPYAP.dll",
+        file: "Mods/YAPYAP/PlayRay Manager.zip",
         readme: "Mods/YAPYAP/README.md"
     }
 ];
