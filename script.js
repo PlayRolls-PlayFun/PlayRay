@@ -121,8 +121,8 @@ document.querySelectorAll('nav a:not(.download-manager-btn)').forEach(anchor => 
 // Download manager function
 function downloadManager() {
     const link = document.createElement('a');
-    link.href = 'manager/PlayRay Manager.zip';
-    link.download = 'PlayRay Manager.zip';
+    link.href = 'PlayRay-Manager-1.1.0.zip';
+    link.download = 'PlayRay-Manager-1.1.0.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
