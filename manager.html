@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayRay Manager - Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .manager-hero {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+        }
+
+        .manager-hero h1 {
+            font-size: 56px;
+            color: #0f3492;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px #0f3492;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background-color: #0f3492;
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .manager-content {
+            padding: 60px 0;
+        }
+
+        .manager-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .manager-description {
+            text-align: left;
+        }
+
+        .manager-description h2 {
+            font-size: 36px;
+            color: #0f3492;
+            margin-bottom: 20px;
+        }
+
+        .manager-description p {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .features-list li {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0f3492;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .manager-image {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #0f3492;
+            overflow: hidden;
+        }
+
+        .manager-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            border: 2px solid #2a2a2a;
+            overflow: hidden;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            border-color: #0f3492;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+
+        .download-section h2 {
+            font-size: 36px;
+            color: #0f3492;
+            margin-bottom: 30px;
+        }
+
+        .download-large-btn {
+            display: inline-block;
+            padding: 25px 80px;
+            background-color: #0f3492;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-family: "Micro 5", sans-serif;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(15, 52, 146, 0.4);
+        }
+
+        .download-large-btn:hover {
+            background-color: #0c2870;
+            transform: scale(1.08);
+            box-shadow: 0 12px 35px rgba(15, 52, 146, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .manager-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .manager-hero h1 {
+                font-size: 36px;
+            }
+
+            .manager-description h2 {
+                font-size: 28px;
+            }
+
+            .download-large-btn {
+                padding: 20px 60px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo-text"><span class="logo-play">Play</span><span class="logo-ray">Ray</span></h1>
+            <nav>
+                <a href="index.html">Mods</a>
+                <a href="manager.html">Manager</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="manager-hero">
+            <div class="container">
+                <h1>PlayRay Manager</h1>
+                <div class="version-badge">Version 1.1.0</div>
+                <p style="font-size: 20px; color: #b0b0b0;">Advanced mod management tool for all your games</p>
+            </div>
+        </section>
+
+        <section class="manager-content">
+            <div class="container">
+                <div class="manager-grid">
+                    <div class="manager-description">
+                        <h2>What is PlayRay Manager?</h2>
+                        <p>PlayRay Manager is a powerful and easy-to-use application that allows you to manage, install, and organize game mods with just a few clicks. Whether you're a casual gamer or a mod enthusiast, PlayRay Manager makes it simple to enhance your gaming experience.</p>
+                        
+                        <h3 style="color: #dddddd; margin-top: 30px; margin-bottom: 15px;">Key Features:</h3>
+                        <ul class="features-list">
+                            <li>Easy mod installation and management</li>
+                            <li>Support for multiple games</li>
+                            <li>One-click mod activation/deactivation</li>
+                            <li>Automatic mod updates</li>
+                            <li>Mod conflict detection</li>
+                            <li>Clean and intuitive interface</li>
+                            <li>Fast and reliable performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="manager-image">
+                        <img src="manager/Glavnaya.png" alt="PlayRay Manager Main Screen">
+                    </div>
+                </div>
+
+                <h2 style="font-size: 36px; color: #0f3492; text-align: center; margin: 60px 0 40px;">Screenshots</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="manager/Glavnaya.png" alt="Main Screen">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="manager/Igra.png" alt="Game Selection">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="manager/Profil.png" alt="Profile Settings">
+                    </div>
+                </div>
+
+                <div class="download-section">
+                    <h2>Ready to enhance your gaming?</h2>
+                    <p style="color: #b0b0b0; margin-bottom: 30px; font-size: 18px;">Download PlayRay Manager v1.1.0 now and start managing your mods</p>
+                    <button class="download-large-btn" onclick="downloadManager()">Download Manager v1.1.0</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span class="logo-play">Play</span><span class="logo-ray">Ray</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
